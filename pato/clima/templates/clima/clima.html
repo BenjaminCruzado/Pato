@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Pato: Como esta el clima en temuco?
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-offset-4 is-4">
+                    <form method="POST">
+                        <div class="field has-addons">
+                            <div class="control is-expanded">
+                            </div>
+                            <div class="control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-offset-4 is-4">
+                    <div class="box">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-50x50">
+                                    <img src="http://openweathermap.org/img/w/{{ clima_ciudad.icon }}.png" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span class="title">{{ clima_ciudad.city }}</span>
+                                        <br>
+                                        <span class="subtitle">{{ clima_ciudad.temperature }} °C</span>
+                                        <br> {{ clima_ciudad.desc }}
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        
+        <p></p>
+        <div class="content">
+            <p>
+                <span class="title">Problemática</span>
+                <br>
+                <span class="subtitle">¿Te ha pasado que vas a un lugar y te sorprende la lluvia de repente? La problemática a tratar de nuestra aplicación es sobre que una persona no sabe qué llevar en el día a día en cierto horario de tiempo porque no sabe si va a hacer mucho frío y si va a estar lloviendo en el intervalo de hora de salida.</span>
+                <br> 
+            </p>
+        </div>
+        <div class="content">
+            <p>
+                <span class="title">¿Qué es?</span>
+                <br>
+                <span class="subtitle">Pato, es una aplicación que permitirá ver por intervalo específico de tiempo en el que uno se va a exponer al tiempo diario y a que arriesga encontrar cuando esté afuera, evitando sufrir accidentes como mojarse la ropa o pasar frío, y así evitar atrapar algún resfriado.</span>
+                <br> 
+            </p>
+        </div>
+        <div class="content">
+            <p>
+                <span class="title">¿Cómo funciona?</span>
+                <br>
+                <span class="subtitle">El usuario ingresará a la aplicación y seleccionará el lugar en donde se encuentra actualmente, al usuario se le permite ingresar un intervalo de tiempo en el que saldrá a exponerse al clima del día y la aplicación le otorgará información de cómo va a estar el tiempo y recomendaciones de lo que debería llevar como accesorio, como un paragua o un abrigo que sea calentito.</span>
+                <br> 
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
